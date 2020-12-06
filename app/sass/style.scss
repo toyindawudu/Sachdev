@@ -1,0 +1,24 @@
+
+
+//  1. Abstracts
+@import 
+'abstracts/variables',
+'abstracts/mixins';
+
+// 2. Vendors
+
+// 3. Base
+@import 'base/animations';
+@import 'base/globals';
+// 4. Layout-related sections
+@import 'layout/header';
+// 5. Components
+// 6. Page-specific styles
+@import 'pages/home';
+// 7. Themes
+// 8. Main SASS input file
+
+
+
+
+

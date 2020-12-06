@@ -1,0 +1,83 @@
+.header {
+  padding-top: 1rem;
+
+  // Hamburger Opne Styles
+  &.open {
+
+    .header__menu {
+
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+  
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+  
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 7.7rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient($tertiarycolour, transparent);
+  }
+
+  nav {
+    padding: 1.0625rem 1.5rem;
+  }
+
+  &__logo {
+    width: 100px; // Toyin remember to delete this. It's ineffective.
+  }
+
+  &__menu {
+
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: grey;
+      transition: all 150ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child){
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__links {
+ 
+    a {
+      position: relative;
+      font-size: $font-med;
+      margin-right: 2rem;
+      transition: color 200ms ease-in-out;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+      }
+
+      &:hover{
+        color: $lightblue;
+
+        &::before {
+          background: linear-gradient(to right, $lightblue, $secondarycolour);
+        }
+      }
+    }
+  } 
+
+}
