@@ -64,8 +64,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-out 500ms ease-in-out forwards;
-          animation: fade-out 500ms ease-in-out forwards;
+  -webkit-animation: fade-out 250ms ease-in-out forwards;
+          animation: fade-out 250ms ease-in-out forwards;
 }
 
 .has-fade {
@@ -89,6 +89,10 @@ body {
   font-size: 1.125rem;
   line-height: 1.3;
   font-family: 'Roboto', sans-serif;
+}
+
+body.noscroll {
+  overflow: hidden;
 }
 
 a, a:visited, a:hover {
@@ -200,10 +204,6 @@ a, a:visited, a:hover {
   background-image: linear-gradient(#DEE6F2, transparent);
 }
 
-.header nav {
-  padding: 1.0625rem 1.5rem;
-}
-
 .header__logo {
   width: 100px;
 }
@@ -228,6 +228,7 @@ a, a:visited, a:hover {
   padding: 2rem;
   background-color: red;
   position: absolute;
+  top: 8rem;
   width: calc(50% - 3rem);
   left: 50%;
   -webkit-transform: translateX(-50%);

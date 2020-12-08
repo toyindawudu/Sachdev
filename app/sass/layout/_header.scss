@@ -29,10 +29,6 @@
     background-image: linear-gradient($tertiarycolour, transparent);
   }
 
-  nav {
-    padding: 1.0625rem 1.5rem;
-  }
-
   &__logo {
     width: 100px; // Toyin remember to delete this. It's ineffective.
   }
@@ -58,6 +54,7 @@
     padding: 2rem;
     background-color: red;
     position: absolute;
+    top: 8rem;
     width: calc(50% - 3rem);
     left: 50%;
     transform: translateX(-50%);
