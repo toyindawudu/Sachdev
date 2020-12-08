@@ -4,7 +4,7 @@
   // Hamburger Opne Styles
   &.open {
 
-    .header__menu {
+    .header__toggle {
 
       > span:first-child {
         transform: rotate(45deg);
@@ -37,7 +37,7 @@
     width: 100px; // Toyin remember to delete this. It's ineffective.
   }
 
-  &__menu {
+  &__toggle {
 
     > span {
       display: block;
@@ -50,6 +50,25 @@
       &:not(:last-child){
         margin-bottom: 5px;
       }
+    }
+  }
+
+  &__menu {
+    background: $white;
+    padding: 2rem;
+    background-color: red;
+    position: absolute;
+    width: calc(50% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    a {
+      display: block;
+      color: $primarycolour;
+      padding: 0.625rem;
+      text-align: center;
+
     }
   }
 
