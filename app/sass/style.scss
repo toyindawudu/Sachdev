@@ -8,11 +8,13 @@
 // 2. Vendors
 
 // 3. Base
+@import 'base/typography';
 @import 'base/animations';
 @import 'base/globals';
 // 4. Layout-related sections
 @import 'layout/header';
 // 5. Components
+@import 'components/button';
 // 6. Page-specific styles
 @import 'pages/home';
 // 7. Themes

@@ -25,12 +25,25 @@ a, a:visited, a:hover {
 }
 
 .main-wrapper {
-  max-width: 1010px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
+// Spacing
+
 .main-padding {
   padding: 0 2rem;
+}
+
+.container{
+
+  &--all {
+    padding: 2rem;
+  }
+
+  &--pr {
+    padding: 0 2rem 0 0;
+  }
 }
 
 // Flexbox
@@ -55,21 +68,6 @@ a, a:visited, a:hover {
   }
 }
 
-// Button 
-.button, button {
-  padding: 1rem 1.875rem;
-  border-radius: 50px;
-  cursor: pointer;
-  background: linear-gradient(to right, $primarycolour, $lightblue);
-  color: $tertiarycolour;
-  border: none;
-  transition: opacity;
-
-  &:hover {
-    opacity: 0.75;
-  }
-}
-
 
 // Visibility
 
@@ -88,13 +86,3 @@ a, a:visited, a:hover {
   }
 }
 
-//Image
-
-.hero-image{
-  width: 400px;
-  padding: 2rem;
-}
-
-.clip-hero-image {
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-}

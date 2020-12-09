@@ -1,0 +1,18 @@
+// Button 
+.button, button {
+  padding: 1rem 1.875rem;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(to right, $primarycolour, $lightblue);
+  color: $tertiarycolour;
+  border: none;
+  transition: opacity;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  @include breakpoint-up(large){
+    margin-top: 2rem;
+  }
+}

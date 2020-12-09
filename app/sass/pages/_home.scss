@@ -1,9 +1,93 @@
-.hero__text,
-.hero__image {
-  width: 50%;
+
+.hero{
+  @include breakpoint-up(large) {
+    display: flex;
+    align-items: center;
+    // height: 400px; // Give a specify height will restricts the container but leaves me with layout issues 
+  }
+
+  &__image {
+    background-image: url("../../../images/financial_analyst.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 24rem;
+    padding-bottom: calc(100% * 3 / 4);
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 2;
+      // background-position: top;
+    }
+
+  }
+
+  &__text {
+    text-align: center;
+
+    // Mixins for the Media queries
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 1;
+    }
+
+    p {
+      line-height: 1.7;
+      text-align: left;
+    }
+  }
 }
 
-.test {
-  width: 95%;
-  margin: 0 auto;
+
+.home-about {
+  text-align: center;
+
+  h1 {
+    margin-top: 2rem;
+  }
+
+  h4 {
+    text-align: left;
+  }
+
+  p {
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+
+.service {
+
+  h1 {
+    margin: 2rem;
+  }
+
+  &__grid {
+
+    @include breakpoint-up(medium){
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    border: 2px solid red;;
+    padding: 0.9375rem;
+
+    @include breakpoint-up(medium){
+      flex: 1 0 50%;
+      
+    }
+
+    @include breakpoint-up(large){
+      flex: 1;
+    }
+  }
+
+  img {
+    color: red;
+    width: 4rem;
+  }
 }
