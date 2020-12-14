@@ -43,10 +43,6 @@
 .home-about {
   text-align: center;
 
-  h1 {
-    margin-top: 2rem;
-  }
-
   h4 {
     text-align: left;
   }
@@ -59,6 +55,8 @@
 
 
 .service {
+  background-color: $primarycolour;
+  color: $white;
 
   h1 {
     margin: 2rem;
@@ -73,12 +71,11 @@
   }
 
   &__item {
-    border: 2px solid red;;
     padding: 0.9375rem;
+    // background-color: grey;
 
     @include breakpoint-up(medium){
       flex: 1 0 50%;
-      
     }
 
     @include breakpoint-up(large){
@@ -89,5 +86,61 @@
   img {
     color: red;
     width: 4rem;
+  }
+
+  &__icon {
+    text-align: center;
+    @include breakpoint-up(medium){
+      
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    padding: .75rem;
+    font-size: 1.275rem;
+    text-align: center;
+    
+    @include breakpoint-up(medium){
+      // margin-bottom: 2rem;
+    }
+
+    @include breakpoint-up(large){
+      // margin-bottom: 2rem;
+    }
+  }
+
+  &__description {
+
+    @include breakpoint-up(medium) {
+      line-height: 1.9;
+      padding: .75rem;
+    }
+  }
+}
+
+.slider {
+  background-color: #e3e3e3;
+  max-width: 90rem;
+  
+
+
+  @include breakpoint-up(medium) {
+  
+
+  }
+}
+
+.vendor-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    width: 180px;
+    border: 2px red solid;
+    margin-right: 2rem;
   }
 }

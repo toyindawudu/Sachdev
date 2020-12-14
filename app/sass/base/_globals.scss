@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  // scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -35,6 +36,10 @@ a, a:visited, a:hover {
   padding: 0 2rem;
 }
 
+.header-padding{
+  padding-top: 3rem;
+}
+
 .container{
 
   &--all {
@@ -42,7 +47,11 @@ a, a:visited, a:hover {
   }
 
   &--pr {
-    padding: 0 2rem 0 0;
+    padding-right: 2rem;
+  }
+
+  &--image {
+    padding: 1rem;
   }
 }
 

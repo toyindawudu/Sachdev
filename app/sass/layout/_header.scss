@@ -53,12 +53,13 @@
   &__menu {
     background: $white;
     padding: 2rem;
-    background-color: red;
+    background-color:$white;
     position: absolute;
     top: 8rem;
-    width: calc(50% - 3rem);
+    width: calc(80% - 4rem);
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 2rem;
     
 
     a {
@@ -66,6 +67,7 @@
       color: $primarycolour;
       padding: 0.625rem;
       text-align: center;
+      font-size: 1.7rem;
 
     }
   }
