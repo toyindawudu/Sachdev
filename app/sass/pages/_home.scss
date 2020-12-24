@@ -3,10 +3,11 @@
   @include breakpoint-up(large) {
     display: flex;
     align-items: center;
-    // height: 400px; // Give a specify height will restricts the container but leaves me with layout issues 
+    // height: 400px; // Give a specify hzaeight will restricts the container but leaves me with layout issues 
   }
 
   &__image {
+    position: relative;
     background-image: url("../../../images/financial_analyst.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -20,6 +21,16 @@
       // background-position: top;
     }
 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../../images/banker.png);
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   &__text {
@@ -123,10 +134,7 @@
   background-color: #e3e3e3;
   max-width: 90rem;
   
-
-
   @include breakpoint-up(medium) {
-  
 
   }
 }
@@ -142,5 +150,6 @@
     width: 180px;
     border: 2px red solid;
     margin-right: 2rem;
+    margin: 0 auto;
   }
 }
